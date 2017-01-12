@@ -1,0 +1,76 @@
+.main-menu {
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+	flex-wrap:  wrap;
+	width:  100%; 
+	padding:  18px; 
+	box-sizing:  border-box; 
+}
+.menu-cell {
+	display:  flex;
+	position:  relative; 
+}
+.menu-cell:not(:last-of-type) {
+	margin-bottom:  18px;
+	background-color:  #424242;
+}
+.menu-column:nth-of-type(1) {	
+	width:  calc(50% - 18px);
+	margin-right:  18px;
+	min-height:  144px; 
+	.menu-cell:nth-of-type(odd) {
+		width:  100%;
+		height:  72px;  
+		background:  $orange-gradient;
+	}
+	.menu-cell:nth-of-type(even) {
+		width:  100%;
+		height:  120px; 
+	}
+}
+.menu-column:nth-of-type(2) {	
+	width:  50%;
+	min-height:  144px; 
+	.menu-cell:nth-of-type(odd) {
+		width:  100%;
+		height:  120px; 
+	}
+	.menu-cell:nth-of-type(even) {
+		width:  100%;
+		height:  72px;  
+		background:  $orange-gradient;
+	}
+
+}
+.menu-cell .option-title {
+	position:  absolute; 
+	bottom:  12px; 
+	left:  12px;
+	font-size:  14px;
+	font-style:  normal; 
+	font-weight:  bold;
+	text-transform:  uppercase;
+}
+.menu-cell .option-icon {
+	position:  absolute; 
+	right:  0; 
+	bottom:  0; 
+	max-width:  30%; 
+	max-height:  80%;	
+}
+.rutina {
+	background-image:  url(../images/rutina-bg.jpg);
+	background-size:  cover; 
+	background-position:  center center; 
+}
+.nutricion { 
+	background-image:  url(../images/nutricion-bg.jpg);
+	background-size:  cover; 
+	background-position:  center center; 
+}
+.entrenadores {
+	background-image:  url(../images/entrenadores-bg.jpg);
+	background-size:  cover; 
+}

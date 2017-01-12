@@ -1,0 +1,49 @@
+@import 'base/reset';
+@import 'base/fonts';
+
+
+// Colors
+
+$orange: #FF6236;
+$orange-gradient: linear-gradient(143.46deg, rgba(255, 140, 0, 1) 0%, rgba(255, 98, 54, 1) 100%);
+$set-gradient: linear-gradient(90deg, rgba(49, 0, 0, 1) 32.45%, rgba(255, 98, 54, 1) 100%);
+
+html, 
+body {
+	width:  100%; 
+	min-height:  100%; 
+	overflow-x:  hidden;
+	// background:  #424242;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	font-family:  "TeXGyreHeros";
+}
+
+h3 {
+	font-weight:  bold; 
+	font-style:  italic; 
+	font-size:  24px; 
+	color:  #ffffff;
+	text-transform:  uppercase;
+}
+
+@import 'atoms/nav-button';
+@import 'atoms/header';
+@import 'atoms/main-menu';
+@import 'atoms/routine';
+@import 'atoms/log-in';
+@import 'atoms/nutrition';
+@import 'atoms/classes';

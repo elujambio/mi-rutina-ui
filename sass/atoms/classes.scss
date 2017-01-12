@@ -1,0 +1,64 @@
+.classes-header {
+	height:  140px;
+	background:  $orange-gradient;
+	position:  relative;
+	.option-icon {
+		position:  absolute; 
+		bottom:  0; 
+		right:  0;
+	}
+	.title { 
+		position:  absolute; 
+		top:  18px; 
+		right:  18px;
+	}
+}
+.classes-container {
+	width:  100%; 
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-start;
+	padding:  18px; 
+	box-sizing:  border-box; 
+}
+.classes__day {
+	font-size:  24px; 
+	font-style:  italic; 
+	font-weight:  bold; 
+	color:  #404040;
+	margin-bottom:  18px; 
+}
+.class {
+	display:  flex;
+	flex-direction:  row; 
+	align-items:  center; 
+	justify-content:  space-between; 
+	background:  #ebebeb; 
+	padding:  18px; 
+	margin-bottom:  18px; 
+
+	font-size:  14px; 
+	font-weight:  bold;
+	width:  100%; 
+	box-sizing:  border-box;
+}
+.class__detail {
+	margin-bottom:  18px;
+	width:  100%; 
+	.class__image {
+		height:  120px; 
+		width:  100%; 
+		background-size:  cover;
+		background-position:  center center; 
+	}
+	.class__description {
+		margin-top:  18px; 
+		color:  #404040;
+	}
+	.class__duration {
+		margin-top:  18px; 
+		color:  #404040;
+	}
+}
+.class__name {}

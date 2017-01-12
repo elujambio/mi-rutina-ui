@@ -1,0 +1,39 @@
+.log-in {
+	height:  100%; 
+	width:  100%; 
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-end;
+	padding:  18px;
+
+	background-image:  url(../images/log-in-bg.jpg);
+	background-size:  cover; 
+	background-position:  center center; 
+
+	box-sizing:  border-box;
+}
+.log-in input,
+ button {
+	width:  280px; 
+	font-family:  "TeXGyreHeros";
+	font-weight:  bold; 
+	font-style:  italic;
+	text-transform:  uppercase;
+	border-style:  none;
+	background:  none;
+	padding:  18px; 
+	margin-bottom:  18px;
+	font-size:  18px;
+	color:  #ffffff;
+}
+.log-in input[type="text"], 
+.log-in input[type="password"] {
+	border-bottom:  solid 3px $orange; 
+} 
+.log-in .submit {
+	text-align:  left;
+	border-radius:  5px; 
+	transform:  skewX(-9deg);
+	background:  $orange-gradient; 
+}

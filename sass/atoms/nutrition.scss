@@ -1,0 +1,135 @@
+.nutrition-header {
+	height:  140px;
+	background-image:  url(../images/nutrition-header-bg.jpg);
+	background-size:  cover; 
+	position:  relative;
+}
+.nutrition-header--info { 
+	padding:  18px; 
+	box-sizing:  border-box;
+	height:  100%; 
+	display:   flex; 
+	flex-direction:  column; 
+	align-items:  flex-end; 
+	justify-content:  space-between;
+	.title {
+		font-size:  14px; 
+		font-weight:  bold; 
+		font-style:  italic;
+		color:  #ffffff; 
+	}
+	.date {
+		font-size:  14px; 
+		text-align:  right; 
+		line-height:  175%;
+		color:  #ffffff; 
+		font-weight:  bold; 
+		font-style:  italic;
+		text-transform:   uppercase; 
+		span { 
+			font-size:  28px; 
+		}
+	}
+}
+.recipes-container {
+	width:  100%; 
+	display:  flex; 
+	flex-direction:  column; 
+	padding:  18px; 
+	box-sizing:   border-box;
+}
+.recipe {
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  flex-start; 
+	width:  100%;
+	margin-bottom:  18px;
+}
+.recipe__info {
+	background-color:  #EBEBEB;
+	width:  50%; 
+	padding:  18px; 
+	box-sizing:  border-box; 
+	height:  120px;
+}
+.recipe__name {
+	text-transform:   uppercase; 
+	color:  #404040; 
+	font-size:  21px; 
+	font-weight:  bold;
+}
+.recipe__description {
+}
+.recipe__description, 
+.recipe__calories {
+	margin-top:  18px;
+	font-size:  14px;
+	color:  #404040;  
+}
+.recipe__image {
+	height:  120px; 
+	width:  50%; 
+	background-size:  cover; 
+	background-position:  center center; 
+}
+.detailed-recipe {
+	width:  100%; 
+	padding:  18px; 
+	box-sizing:  border-box; 
+	.recipe__title { 
+		font-size:  36px; 
+		color:  #404040;
+		text-transform:  uppercase;
+		font-weight:  bold;
+	}
+	.recipe__data {
+		display:  flex; 
+		flex-direction:  row; 
+		align-items: flex-start; 
+		justify-content:  space-between;  
+		font-size:  18px; 
+		font-weight:  bold; 
+		margin-top:  18px;
+		span {
+			font-size:  12px; 
+			margin-bottom: 12px;
+		}
+	}
+	.recipe__image {
+		width:  100%; 
+		padding:  18px;
+		margin-top: 18px;
+		box-sizing:  content-box;
+		margin-left:  -18px; 
+		height:  120px; 
+		background-size:  cover; 
+		background-position:  center center; 
+	}
+	.ingredients__title { 
+		font-size:  21px; 
+		color:  #757575;
+		text-transform:  uppercase; 
+		font-style:  italic; 
+		margin-top:  18px;
+	}
+	.recipe__ingredients {
+		color:  #404040;
+		padding:  18px; 
+		width:  100%; 
+		box-sizing:  border-box;
+		background:  #EBEBEB;
+		margin-top:  18px;
+		li {
+			line-height:  125%;
+		}
+	}
+	.recipe__preparation {
+		margin-top:  18px;
+		li {
+			line-height:  125%; 
+			width:  100%; 
+			margin-bottom:  18px;
+			color:  #404040;
+		}
+	}
+}

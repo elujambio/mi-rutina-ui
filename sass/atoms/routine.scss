@@ -1,0 +1,215 @@
+.routine-header {
+	height:  140px;
+	background-image:  url(../images/routine-header-bg.jpg);
+	background-size:  cover; 
+	position:  relative;
+}
+.back-button {
+	position:  absolute; 
+	bottom:  18px; 
+	left:  18px;
+}
+.estimated-time {
+	position:  absolute; 
+	top:  18px; 
+	right:  18px;
+}
+.routine--timer {
+	width:  100%; 
+	// margin-left:  -18px;
+	// background:  red; 
+	// height:  12px;
+	overflow:  hidden;
+	height:  auto;
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+
+}
+.completition-bar--container {
+	width:  75%; 
+	overflow:  hidden;
+	height:  12px; 
+	margin-bottom:  18px;
+}
+.completition-bar {
+	width:  100vw; 
+	height:  100%; 
+	background:  $orange-gradient;
+}
+.set--time,
+.total--time {
+	font-family: "Monaco";
+	color:  #404040;
+	padding-left:  18px; 
+	padding-right:  18px;
+}
+.set--time { font-size:  36px; }
+.total--time { font-size:  21px; margin-bottom:  18px; }
+
+.excercise--info {
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+	width: 100%; 
+}
+.visual {
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  flex-start; 
+	justify-content:  flex-start; 
+	width:  100%; 
+	height:  80px; 
+	margin-bottom:  18px;
+}
+.excercise--video {
+	width:  calc(100% - 138px); 
+	height:  80px; 
+	margin-right:  18px;
+	background-size:  cover;
+	background-position:  center center;
+	display:  flex; 
+	flex-direction:  column; 
+	align-items:  flex-start; 
+	justify-content:  center; 
+	color:  #ffffff;
+	font-weight:  bold; 
+	font-size:  14px;
+	text-transform:  uppercase;
+	padding:  18px;
+	box-sizing:  border-box;
+}
+.excercise--muscle-group {
+	width:  120px; 
+	height:  80px; 
+	background-size:  cover;
+	background-position:  center center;
+}
+.excercise--info .written {
+	font-size:  12px; 
+	font-weight:  bold;
+	color:  #404040;
+	width:  100%; 
+	.description {
+		margin-bottom: 6px;
+	}
+	.tempo { 
+		margin-bottom:  18px;
+	}
+}
+.routine-header,
+.routine-header p {
+	color:  #ffffff;
+	font-weight:  bold; 
+	font-family: 'TeXGyreHeros';
+	text-transform:  uppercase;
+}
+.routine--info { 
+	position:  absolute; 
+	bottom:  18px;
+	right:  18px; 
+
+}
+.routine {
+	height:  calc(100% - 140px); 
+	width:  100%; 
+	padding:  18px; 
+	padding-bottom:  144px; 
+	box-sizing:  border-box;
+
+	display:  flex; 
+	flex-direction:  column; 
+	
+	overflow:  scroll;
+
+	position:  relative;  
+	top:  0; 
+	left:  0; 
+
+
+	// z-index:  100;
+	background:  #ffffff;
+
+	* {
+		flex-shrink:  0;
+	}
+}
+.start-routine-button {
+	width: 100%; 
+	text-transform:  uppercase;
+	display:  flex; 
+	font-size:  14px;
+	padding:  18px; 
+	margin-bottom:  18px;
+
+	box-sizing:  border-box;
+	border-radius:  5px;
+
+	font-family: 'TeXGyreHeros';
+	color:  #ffffff;
+	font-weight:  bold;
+	font-style:  italic;
+
+	background: linear-gradient(90deg, rgba(31, 191, 46, 1) 0%, rgba(51, 237, 217, 1) 100%);
+	transform:  skewX(-9deg);
+	span {
+		transform:  skewX(9deg);
+		
+	}
+}
+.routine-row {
+	width:  100%; 
+	padding:  12px; 
+	box-sizing:  border-box; 
+
+	display:  flex; 
+	flex-direction:  row; 
+	justify-content:  space-between; 
+	align-items:  center; 
+}
+.routine-row:not(:last-of-type) {
+	margin-bottom:  18px;
+}
+.set {
+	background:  #404040;
+}
+.set__number {
+	font-weight:  bold; 
+	font-style:  normal;
+	text-transform:  uppercase;
+	font-size:  14px; 
+	color:  #ffffff;
+}
+.set__cycles {
+	font-weight:  normal; 
+	font-size:  14px; 
+	color:  #ffffff;
+}
+.reps {
+	background:  #E8E8E8;
+}
+.rep__name,
+.rep__rep {
+	font-size:  14px; 
+	font-weight:  normal;
+	color:  #404040;
+}
+.routine-controls {
+	position:  fixed; 
+	bottom:  0; 
+	left:  0; 
+	height:  120px; 
+	width:  100%; 
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 7.38%, rgba(255, 255, 255, 1) 72.84%, rgba(255, 255, 255, 1) 75.7%, rgba(255, 255, 255, 1) 100%);
+	padding-left:  42px; 
+	padding-right:  42px; 
+	display:  flex; 
+	flex-direction:  row; 
+	align-items:  center;
+	justify-content:  space-between; 
+	box-sizing:  border-box;
+}
+
+
